@@ -73,6 +73,7 @@ done < <(find . -type f \
   -not -path "./.git/*" \
   -not -path "*/build/*" \
   -not -path "./.gradle/*" \
+  -not -name "setup.sh" \
   -not -name "*.jar" -not -name "*.apk" -not -name "*.aab" -not -name "*.png")
 
 # 3. The launcher label.
