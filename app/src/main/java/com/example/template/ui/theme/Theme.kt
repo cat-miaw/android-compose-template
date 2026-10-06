@@ -1,4 +1,4 @@
-package com.example.aplikasi.ui.theme
+package com.example.template.ui.theme
 
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.darkColorScheme
@@ -21,7 +21,7 @@ private val LightColors = lightColorScheme(
 )
 
 @Composable
-fun AplikasiTheme(
+fun TemplateTheme(
     darkTheme: Boolean = false,
     dynamicColor: Boolean = true,
     content: @Composable () -> Unit,

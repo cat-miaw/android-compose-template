@@ -1,9 +1,9 @@
-package com.example.aplikasi
+package com.example.template
 
 import android.app.Application
 import android.content.Context
-import com.example.aplikasi.di.AppContainer
-import com.example.aplikasi.di.DefaultAppContainer
+import com.example.template.di.AppContainer
+import com.example.template.di.DefaultAppContainer
 
 /**
  * Deliberately empty. Every dependency is created lazily by [AppContainer] on first

@@ -1,4 +1,4 @@
-package com.example.aplikasi.di
+package com.example.template.di
 
 import android.content.Context
 import kotlinx.coroutines.Dispatchers

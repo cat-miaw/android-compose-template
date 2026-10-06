@@ -1,4 +1,4 @@
-package com.example.aplikasi.ui
+package com.example.template.ui
 
 import androidx.compose.runtime.Composable
 import androidx.lifecycle.ViewModelProvider
@@ -7,16 +7,16 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.example.aplikasi.di.AppContainer
-import com.example.aplikasi.ui.home.HomeRoute
-import com.example.aplikasi.ui.home.HomeViewModel
+import com.example.template.di.AppContainer
+import com.example.template.ui.home.HomeRoute
+import com.example.template.ui.home.HomeViewModel
 
 private object Routes {
     const val HOME = "home"
 }
 
 @Composable
-fun AplikasiNavHost(
+fun TemplateNavHost(
     container: AppContainer,
     navController: NavHostController = rememberNavController(),
 ) {

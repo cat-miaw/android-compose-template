@@ -1,4 +1,4 @@
-package com.example.aplikasi.ui.home
+package com.example.template.ui.home
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box

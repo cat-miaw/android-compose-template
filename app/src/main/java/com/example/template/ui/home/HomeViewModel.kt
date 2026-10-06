@@ -1,8 +1,8 @@
-package com.example.aplikasi.ui.home
+package com.example.template.ui.home
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.aplikasi.di.HomeRepository
+import com.example.template.di.HomeRepository
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow

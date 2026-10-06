@@ -1,4 +1,4 @@
-package com.example.aplikasi.benchmark
+package com.example.template.benchmark
 
 import androidx.benchmark.macro.junit4.BaselineProfileRule
 import androidx.test.uiautomator.By
@@ -39,6 +39,6 @@ class BaselineProfileGenerator {
     }
 
     private companion object {
-        const val PACKAGE_NAME = "com.example.aplikasi"
+        const val PACKAGE_NAME = "com.example.template"
     }
 }

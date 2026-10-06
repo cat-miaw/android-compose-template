@@ -7,7 +7,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.aplikasi.benchmark"
+    namespace = "com.example.template.benchmark"
     compileSdk = 35
 
     defaultConfig {

@@ -1,4 +1,4 @@
-package com.example.aplikasi
+package com.example.template
 
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.espresso.Espresso.onView

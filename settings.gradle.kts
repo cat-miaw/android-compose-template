@@ -20,7 +20,7 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "aplikasi"
+rootProject.name = "android-compose-template"
 
 include(":app")
 

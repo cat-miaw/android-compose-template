@@ -1,10 +1,34 @@
-# aplikasi
+# android-compose-template
 
 A baseline Android app template built for **cold start speed** and **smooth frames**.
 
 Single module, Kotlin, Jetpack Compose, MVVM with `StateFlow`, manual DI. No Hilt, no
 annotation processors, no reflection-based DI — every layer you skip here is work you
 otherwise pay for at startup.
+
+## Start a new project from this
+
+```bash
+git clone https://github.com/cat-miaw/android-compose-template.git my-app
+cd my-app
+```
+
+Then make it yours — one command does the whole rename:
+
+```bash
+# usage: ./setup.sh com.yourcompany.myapp My App Name
+./setup.sh com.yourcompany.myapp "My App Name"
+git rm -rf .git && git init    # drop the template's history
+./gradlew :app:assembleDebug
+```
+
+The script rewrites `namespace`, `applicationId` and the benchmark package, moves the
+source directories, and updates the app label. On Windows, run the steps manually — it is
+only a package rename.
+
+If you hit the `[androidx.baselineprofile] Configuration with name 'baselineProfile' not
+found` error after renaming, you skipped setup.sh and the module wiring drifted; re-clone
+and use the script.
 
 ## Requirements
 
@@ -35,18 +59,18 @@ sdk.dir=/path/to/Android/Sdk
 
 ```
 app/                     single module — the whole app
-  src/main/java/com/example/aplikasi/
+  src/main/java/com/example/template/
     App.kt               Application: intentionally does nothing at startup
     MainActivity.kt      single activity, splash screen, edge-to-edge
     di/                  manual dependency container + repository
     ui/
-      AplikasiNavHost.kt navigation graph
+      TemplateNavHost.kt navigation graph
       home/              ViewModel, UI state, screen, route binding
       theme/             Material 3 color, type, theme
 benchmark/               baseline profile generator (needs a physical device)
 ```
 
-Rename `com.example.aplikasi` to your own package before you start — it appears in
+Rename `com.example.template` to your own package before you start — it appears in
 `app/build.gradle.kts` (three times), `AndroidManifest.xml`, `benchmark/build.gradle.kts`,
 and the package directories.
 
