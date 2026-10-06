@@ -39,8 +39,8 @@ jobs:
           key: gradle-${{ runner.os }}-${{ hashFiles('**/*.gradle.kts', 'gradle/libs.versions.toml') }}
           restore-keys: gradle-${{ runner.os }}-
 
-      # No daemon and no configuration-cache reuse across runs: the first build in
-      # CI should be as reproducible as a developer's first build.
+      # No daemon: the first build in CI should be as reproducible as a
+      # developer's first build. The Gradle build cache still applies.
       - name: Lint
         run: ./gradlew :app:lintRelease --no-daemon --stacktrace
 

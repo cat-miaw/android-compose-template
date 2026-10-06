@@ -121,8 +121,9 @@ val jank = JankStats.createAndTrack(window) { frameData ->
 ## CI
 
 `.github/workflows/ci.yml` runs lint, unit tests and a release assemble on every push.
-Because `org.gradle.configuration-cache=true` is on, builds are incremental after the first
-one.
+Parallel execution and the Gradle build cache are on. The configuration cache is **off** —
+AGP 8.7.x cannot serialize `aarMetadataArtifacts` on `CheckAarMetadataTask` and fails the
+build rather than degrading gracefully. Revisit it when you bump AGP; the payoff is real.
 
 ## Things to know before you build on this
 
